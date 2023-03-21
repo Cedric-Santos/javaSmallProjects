@@ -4,6 +4,10 @@ public class Cliente {
 
     private String nome, endereco;
 
+    private String[][] cadastros = new String[1][1];
+
+
+
     public int getCodigo() {
         return codigo;
     }
@@ -27,4 +31,10 @@ public class Cliente {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
+
+    public String[][] addList(String nome, String endereco, String[][] arr) {
+        String[][] newArr = new String[arr.length + 1][arr.length + 1];
+        return arr;
+    };
+
 }

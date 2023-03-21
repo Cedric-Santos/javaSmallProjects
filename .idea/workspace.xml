@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b739ad71-d365-41b1-827f-c4e57e1606e8" name="Changes" comment="Adding the first project's classes, along with some basic structure">
+    <list default="true" id="b739ad71-d365-41b1-827f-c4e57e1606e8" name="Changes" comment="Re-writing some classes, Instantiating all the subclasses into the Main class, and also starting the main code structure.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,10 @@
       <option name="presentableId" value="Default" />
       <updated>1679188096935</updated>
       <workItem from="1679188098228" duration="1197000" />
-      <workItem from="1679231262327" duration="2979000" />
+      <workItem from="1679231262327" duration="3753000" />
+      <workItem from="1679272251972" duration="2021000" />
+      <workItem from="1679309637956" duration="5798000" />
+      <workItem from="1679366182747" duration="742000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1679188638217</created>
@@ -75,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679235368343</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Re-writing some classes, Instantiating all the subclasses into the Main class, and also starting the main code structure.">
+      <created>1679242871383</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679242871383</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,7 +93,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="Adding the first project's classes, along with some basic structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding the first project's classes, along with some basic structure" />
+    <MESSAGE value="Re-writing some classes, Instantiating all the subclasses into the Main class, and also starting the main code structure." />
+    <option name="LAST_COMMIT_MESSAGE" value="Re-writing some classes, Instantiating all the subclasses into the Main class, and also starting the main code structure." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
