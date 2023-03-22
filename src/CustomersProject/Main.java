@@ -1,3 +1,5 @@
+package CustomersProject;
+
 import java.util.Scanner;
 public class Main {
     private int decision;
@@ -41,9 +43,9 @@ public class Main {
         String[][] cadastros = new String[1][2];
 
         System.out.println("\nBem vindo ao sistema logístico.\nO quê deseja fazer?");
-        System.out.println("\n1 - Registrar Cliente" +
-                           "\n2 - Registrar Funcionario" +
-                           "\n3 - Registrar Produto" +
+        System.out.println("\n1 - Registrar CustomersProject.Cliente" +
+                           "\n2 - Registrar CustomersProject.Funcionario" +
+                           "\n3 - Registrar CustomersProject.Produto" +
                            "\n4 - Checar Produtos Disponíveis" +
                            "\n5 - Relatório de Vendas" +
                            "\n6 - Sair");
@@ -52,12 +54,12 @@ public class Main {
 
         switch (choice) {
             case 1:
-                System.out.println("Digite o Nome do Cliente");
+                System.out.println("Digite o Nome do CustomersProject.Cliente");
                 nomeNew = scanner.next();
-                System.out.println("Digite o Endereço do Cliente");
+                System.out.println("Digite o Endereço do CustomersProject.Cliente");
                 scanner.nextLine();
                 enderecoNew = scanner.nextLine();
-                System.out.println("Digite o Código de Registro do Cliente");
+                System.out.println("Digite o Código de Registro do CustomersProject.Cliente");
                 codigo = scanner.nextLine();
                 cadastros = addList(nomeNew, enderecoNew, cadastros);
                 break;

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b739ad71-d365-41b1-827f-c4e57e1606e8" name="Changes" comment="Re-writing some classes, Instantiating all the subclasses into the Main class, and also starting the main code structure.">
+    <list default="true" id="b739ad71-d365-41b1-827f-c4e57e1606e8" name="Changes" comment="Adding customer registering methods to the Main class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,8 @@
       <workItem from="1679231262327" duration="3753000" />
       <workItem from="1679272251972" duration="2021000" />
       <workItem from="1679309637956" duration="5798000" />
-      <workItem from="1679366182747" duration="742000" />
+      <workItem from="1679366182747" duration="957000" />
+      <workItem from="1679484024345" duration="682000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1679188638217</created>
@@ -84,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679242871383</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding customer registering methods to the Main class">
+      <created>1679367045527</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679367045527</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,7 +100,8 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Adding the first project's classes, along with some basic structure" />
     <MESSAGE value="Re-writing some classes, Instantiating all the subclasses into the Main class, and also starting the main code structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Re-writing some classes, Instantiating all the subclasses into the Main class, and also starting the main code structure." />
+    <MESSAGE value="Adding customer registering methods to the Main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding customer registering methods to the Main class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

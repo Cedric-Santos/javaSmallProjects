@@ -1,3 +1,5 @@
+package CustomersProject;
+
 public class Cliente {
 
     private int codigo;

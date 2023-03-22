@@ -1,8 +1,10 @@
-public class Funcionario {
+package CustomersProject;
+
+public class Produto {
 
     private int codigo;
 
-    private String nome, endereco;
+    private String nome;
 
     public int getCodigo() {
         return codigo;
@@ -18,13 +20,5 @@ public class Funcionario {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
     }
 }
