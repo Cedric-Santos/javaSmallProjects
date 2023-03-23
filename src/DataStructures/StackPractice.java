@@ -1,18 +1,27 @@
 package DataStructures;
 
 import java.util.Stack;
+import java.util.Scanner;
 
 public class StackPractice {
 
     public static void main(String args[]) {
 
+        Scanner s = new Scanner(System.in);
         Stack<String> stack = new Stack<String>();
 
-        stack.push("Minecraft");
-        stack.push("Skyrim");
-        stack.push("Doom");
-        stack.push("Borderlands");
-        stack.push("FFVII");
+        System.out.println("Type a word.");
+        String chosenWord = s.next();
+        String result = "";
+
+
+        for(Integer i = chosenWord.length() - 1; i >= 0; i--) {
+            stack.push(String.valueOf(chosenWord.charAt(i)));
+            result += stack.pop();
+        }
+
+
+        System.out.println(result);
 
         /*
         * stack.push($ELEMENT$); - Adds elements on top (at the end) of the stack
@@ -24,7 +33,6 @@ public class StackPractice {
 
         // You can assign the value of the element you removed using stack.pop(); to a variable.
 
-        System.out.println(stack.peek());
     }
 
 
