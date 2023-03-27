@@ -14,19 +14,21 @@ public class PrintQueue {
         System.out.println("1 - Add New File into Queue\n" +
                 "2 - Remove Existing File From Queue\n" +
                 "3 - Start Printing\n" +
-                "4 - Exit\n");
+                "4 - Check File at the Head of the Queue\n" +
+                "5 - Exit\n");
 
         check = s.nextInt();
 
-        if (check < 1 || check > 4) {
+        if (check < 1 || check > 5) {
 
             do {
                 System.out.println("1 - Add New File into Queue\n" +
                         "2 - Remove Existing File From Queue\n" +
                         "3 - Start Printing\n" +
-                        "4 - Exit\n");
+                        "4 - Check File at the Head of the Queue\n" +
+                        "5 - Exit\n");
                 check = s.nextInt();
-            } while (check < 1 || check > 4);
+            } while (check < 1 || check > 5);
 
         }
 
@@ -43,16 +45,28 @@ public class PrintQueue {
                 PrintQueue.utilize(check, s);
             }
             case 2 -> {
-                PrintQueue.removePrint();
-                check = PrintQueue.app(check, s);
-                PrintQueue.utilize(check, s);
+                if (queue.isEmpty()) {
+                    System.out.println("\n*****No Files Currently Waiting for Priting*****\n");
+                    check = PrintQueue.app(check, s);
+                    PrintQueue.utilize(check, s);
+                } else {
+                    PrintQueue.removePrint();
+                    check = PrintQueue.app(check, s);
+                    PrintQueue.utilize(check, s);
+                }
             }
             case 3 -> {
                 PrintQueue.startPrint();
                 check = PrintQueue.app(check, s);
                 PrintQueue.utilize(check, s);
             }
-            case 4 -> System.out.println("\n*****Closing Software*****\n");
+            case 4 -> {
+                PrintQueue.checkHead();
+                check = PrintQueue.app(check, s);
+                PrintQueue.utilize(check, s);
+            }
+
+            case 5 -> System.out.println("\n*****Closing Software*****\n");
         }
 
     }
@@ -62,7 +76,7 @@ public class PrintQueue {
     }
 
     protected static void removePrint () {
-        queue.poll();
+        System.out.println("\n*****Removing File*****\n" + queue.poll() + "\n***********************");
     }
 
     protected static void startPrint () {
@@ -70,6 +84,16 @@ public class PrintQueue {
         do {
             System.out.println("1 New Printed File: " + queue.poll());
         } while (!queue.isEmpty());
+    }
+
+    protected static void checkHead () {
+        if (queue.isEmpty()) {
+            System.out.println("*****EMPTY*****");
+        } else {
+            System.out.println("\n*****First Item at Queue*****\n" + queue.peek() +
+                               "\n*****************************");
+
+        };
     }
 
 
