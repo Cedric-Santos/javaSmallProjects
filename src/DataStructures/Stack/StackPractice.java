@@ -20,7 +20,6 @@ public class StackPractice {
             result += stack.pop();
         }
 
-
         System.out.println(result);
 
         /*

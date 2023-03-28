@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b739ad71-d365-41b1-827f-c4e57e1606e8" name="Changes" comment="Adding new error handling to specific method">
-      <change afterPath="$PROJECT_DIR$/src/DataStructures/Stack/FileStackExercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructures/Stack/FolderStructure.java" afterDir="false" />
+    <list default="true" id="b739ad71-d365-41b1-827f-c4e57e1606e8" name="Changes" comment="Adding new practicing project to my Stack practicing package.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataStructures/Stack/FileStackExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructures/Stack/FileStackExercise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataStructures/Stack/FolderStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructures/Stack/FolderStructure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataStructures/Stack/StackPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructures/Stack/StackPractice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +70,7 @@
       <workItem from="1679668134148" duration="1873000" />
       <workItem from="1679852944017" duration="7663000" />
       <workItem from="1679918790607" duration="3864000" />
-      <workItem from="1680005493072" duration="3655000" />
+      <workItem from="1680005493072" duration="10685000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1679188638217</created>
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680011511038</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Adding new practicing project to my Stack practicing package.">
+      <created>1680012256508</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680012256508</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +208,8 @@
     <MESSAGE value="Adding new options to the practicing software;&#10;Fixing issues" />
     <MESSAGE value="Improving the system with cleaner code;&#10;Adding some best practices;&#10;Fixing Errors;" />
     <MESSAGE value="Adding new error handling to specific method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding new error handling to specific method" />
+    <MESSAGE value="Adding new practicing project to my Stack practicing package." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding new practicing project to my Stack practicing package." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
