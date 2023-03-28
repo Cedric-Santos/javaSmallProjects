@@ -6,93 +6,88 @@ import java.util.Scanner;
 
 public class PrintQueue {
 
+    private static final int ADD_FILE = 1;
+    private static final int REMOVE_FILE = 2;
+    private static final int START_PRINT = 3;
+    private static final int CHECK_HEAD = 4;
+    private static final int EXIT = 5;
+
     static Queue<String> queue = new LinkedList<String>();
 
     protected static Integer app(Integer check, Scanner s) {
-
-        System.out.println("\n*****Select an Option Ahead*****\n");
-        System.out.println("1 - Add New File into Queue\n" +
-                "2 - Remove Existing File From Queue\n" +
-                "3 - Start Printing\n" +
-                "4 - Check File at the Head of the Queue\n" +
-                "5 - Exit\n");
-
-        check = s.nextInt();
-
-        if (check < 1 || check > 5) {
-
             do {
-                System.out.println("1 - Add New File into Queue\n" +
+                System.out.println("\n1 - Add New File into Queue\n" +
                         "2 - Remove Existing File From Queue\n" +
                         "3 - Start Printing\n" +
                         "4 - Check File at the Head of the Queue\n" +
                         "5 - Exit\n");
                 check = s.nextInt();
-            } while (check < 1 || check > 5);
+            } while (check < ADD_FILE || check > EXIT);
+
+            return check;
 
         }
-
-        return check;
-    }
 
     protected static void utilize(Integer check, Scanner s) {
 
         switch (check) {
-            case 1 -> {
+            case ADD_FILE -> {
                 System.out.println("\nFile Name?\n");
                 PrintQueue.addPrint(s.next());
                 check = PrintQueue.app(check, s);
                 PrintQueue.utilize(check, s);
             }
-            case 2 -> {
+            case REMOVE_FILE -> {
                 if (queue.isEmpty()) {
                     System.out.println("\n*****No Files Currently Waiting for Priting*****\n");
-                    check = PrintQueue.app(check, s);
-                    PrintQueue.utilize(check, s);
                 } else {
                     PrintQueue.removePrint();
-                    check = PrintQueue.app(check, s);
-                    PrintQueue.utilize(check, s);
                 }
+                check = PrintQueue.app(check, s);
+                PrintQueue.utilize(check, s);
             }
-            case 3 -> {
+            case START_PRINT -> {
                 PrintQueue.startPrint();
                 check = PrintQueue.app(check, s);
                 PrintQueue.utilize(check, s);
             }
-            case 4 -> {
+            case CHECK_HEAD -> {
                 PrintQueue.checkHead();
                 check = PrintQueue.app(check, s);
                 PrintQueue.utilize(check, s);
             }
 
-            case 5 -> System.out.println("\n*****Closing Software*****\n");
+            case EXIT -> System.out.println("\n*****Closing Software*****\n");
         }
 
     }
 
-    protected static void addPrint (String pdf) {
+    public static void addPrint (String pdf) {
         queue.offer(pdf);
     }
 
-    protected static void removePrint () {
-        System.out.println("\n*****Removing File*****\n" + queue.poll() + "\n***********************");
+    public static void removePrint () {
+        System.out.println("\n*****Removing File*****\n" + queue.poll() +
+                           "\n***********************");
     }
 
-    protected static void startPrint () {
-        System.out.println("\n\n*****Starting Printing Process*****\n");
-        do {
-            System.out.println("1 New Printed File: " + queue.poll());
-        } while (!queue.isEmpty());
+    public static void startPrint () {
+        if (!queue.isEmpty()) {
+            System.out.println("\n\n*****Starting Printing Process*****\n");
+            do {
+                System.out.println("1 New Printed File: " + queue.poll());
+            } while (!queue.isEmpty());
+        } else {
+            System.out.println("*****EMPTY*****");
+        }
     }
 
-    protected static void checkHead () {
+    public static void checkHead () {
         if (queue.isEmpty()) {
             System.out.println("*****EMPTY*****");
         } else {
             System.out.println("\n*****First Item at Queue*****\n" + queue.peek() +
                                "\n*****************************");
-
         };
     }
 
