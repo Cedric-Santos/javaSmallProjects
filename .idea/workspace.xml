@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b739ad71-d365-41b1-827f-c4e57e1606e8" name="Changes" comment="Adding new options to the practicing software;&#10;Fixing issues">
+    <list default="true" id="b739ad71-d365-41b1-827f-c4e57e1606e8" name="Changes" comment="Improving the system with cleaner code;&#10;Adding some best practices;&#10;Fixing Errors;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataStructures/Queue/PrintQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructures/Queue/PrintQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataStructures/Queue/QueuePractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructures/Queue/QueuePractice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
       <workItem from="1679668134148" duration="1873000" />
       <workItem from="1679852944017" duration="7663000" />
       <workItem from="1679918790607" duration="3864000" />
-      <workItem from="1680005493072" duration="1784000" />
+      <workItem from="1680005493072" duration="2917000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1679188638217</created>
@@ -155,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679923191618</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Improving the system with cleaner code;&#10;Adding some best practices;&#10;Fixing Errors;">
+      <created>1680007414700</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680007414700</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +190,8 @@
     <MESSAGE value="Partially implementation of my queue practicing exercise." />
     <MESSAGE value="Adding new packages to each exercise;&#10;Going further with the QueuePractice implementation" />
     <MESSAGE value="Adding new options to the practicing software;&#10;Fixing issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding new options to the practicing software;&#10;Fixing issues" />
+    <MESSAGE value="Improving the system with cleaner code;&#10;Adding some best practices;&#10;Fixing Errors;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improving the system with cleaner code;&#10;Adding some best practices;&#10;Fixing Errors;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

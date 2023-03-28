@@ -63,7 +63,12 @@ public class PrintQueue {
     }
 
     public static void addPrint (String pdf) {
-        queue.offer(pdf);
+        if (queue.contains(pdf)) {
+            System.out.println("\n*****Existing File Detected*****\n" + "" +
+                               "Please, remove or rename existing file before inserting into queue.\n");
+        } else {
+            queue.offer(pdf);
+        }
     }
 
     public static void removePrint () {
