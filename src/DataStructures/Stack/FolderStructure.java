@@ -15,20 +15,24 @@ public class FolderStructure {
 
     public void removeFolder(String folderName) {
 
-        Stack<String> extra = new Stack();
+        if (stack.contains(folderName)) {
+            Stack<String> extra = new Stack<>();
 
-        for (Integer i = stack.search(folderName); i != 0; i--) {
-            extra.push(stack.pop());
-        };
-        extra.pop();
-        if (!stack.empty()) {
-            extra.push(stack.pop());
+            for (Integer i = stack.search(folderName); i != 0; i--) {
+                extra.push(stack.pop());
+            };
+            extra.pop();
+            if (!stack.empty()) {
+                extra.push(stack.pop());
+            }
+
+            for (Integer i = extra.size(); i != 0; i--) {
+                stack.push(extra.pop());
+            }
+        } else {
+            if (stack.isEmpty()) {System.out.println("\nStack is Empty.\n");}
+            else {System.out.println("\nNo Folder " + folderName + " Detected in Stack.\n");}
         }
-
-        for (Integer i = extra.size(); i != 0; i--) {
-            stack.push(extra.pop());
-        }
-
 
     }
 
